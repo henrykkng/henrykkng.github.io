@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How the personal Omarchy Drive desktop integration accesses and stores Google Drive data.">
+  <title>Privacy policy · Omarchy Drive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a class="brand" href="./">Omarchy Drive</a><nav aria-label="Main navigation"><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav></header>
+  <main>
+    <p class="eyebrow">Last updated: November 9, 2026</p>
+    <h1>Privacy policy</h1>
+    <p class="lead">This policy describes Omarchy Drive, the personal rclone and Flea desktop configuration maintained by <a href="https://github.com/henrykkng">henrykkng</a>.</p>
+    <section><h2>Data accessed and purpose</h2><p>After the owner authorizes Google access, rclone accesses Google Drive file contents and metadata, including names, folder structure, identifiers, sizes, and modification information. It uses this information to display files and perform the owner's requested operations, including reading, downloading, creating, uploading, editing, moving, renaming, and deleting files and folders.</p><p>The integration requests Google Drive read and write access. Google account authorization is handled by Google in the browser; the integration does not request or store the owner's Google password.</p></section>
+    <section><h2>Local storage and retention</h2><p>OAuth credentials and tokens are stored in the local rclone configuration with owner-only file permissions. Rclone may retain file metadata in memory and temporarily cache file content on the owner's computer, including writes waiting to upload. Downloads and copies explicitly saved by the owner remain where the owner stores them.</p><p>Temporary cache retention is managed by rclone's cache settings. Files waiting to upload may be kept longer. Credentials remain until removed or replaced, and downloaded files remain until deleted by the owner.</p></section>
+    <section><h2>Sharing and use</h2><p>Drive requests are sent to Google's services. The configuration does not operate a separate hosted backend for Drive content and does not sell Drive data or use it for advertising. The owner can intentionally copy files to other locations or open them in other applications; those destinations and applications have their own data practices.</p><p>The maintainer does not use Google user data obtained through this integration for model training, advertising, or unrelated analytics.</p></section>
+    <section><h2>Control and deletion</h2><p>The owner can stop the mount at any time and revoke the app's access in <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation prevents future authorized access but does not delete files or cached copies already stored on the computer.</p><p>Removing local authorization credentials or cached data is a separate action on the owner's computer. Pending uploads should finish before removing cache data. Deleting a file through the mounted Drive can affect the actual file in Google Drive.</p></section>
+    <section><h2>This website</h2><p>This site is informational and has no Google sign-in, forms, advertising, analytics scripts, or application cookies. It is hosted on GitHub Pages. GitHub records visitors' IP addresses for security purposes as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Public GitHub issue submissions are subject to GitHub's policies.</p></section>
+    <section><h2>Contact and changes</h2><p>Questions can be directed to the maintainer through the <a href="https://github.com/henrykkng/henrykkng.github.io/issues">site repository's issue tracker</a>. Do not include credentials, tokens, or private Drive data in public issues. This policy will be updated if the integration's data practices change.</p></section>
+  </main>
+  <footer><a href="./">Home</a> · <a href="terms.html">Terms of use</a></footer>
+</body>
+</html>
